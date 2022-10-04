@@ -1,6 +1,10 @@
 import React from "react";
 import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
 import memories from "./images/memories.png";
+import Post from "./components/Posts/Post/Post";
+import Posts from "./components/Posts/Posts";
+import Form from "./components/Form/Form";
+
 const App = () => {
   return (
     <Container maxwidth="lg">
