@@ -12,13 +12,14 @@ const Form = () => {
   });
   const classes = useStyles();
   const handleSubmit = () => {};
+  const clear = () => {};
 
   return (
     <Paper className={classes.paper}>
       <form
         autoComplete="off"
         noValidate
-        className={classes.form}
+        className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">Creating a Memory</Typography>
@@ -67,6 +68,25 @@ const Form = () => {
             }
           />
         </div>
+        <Button
+          className={classes.fileInput}
+          variant="contained"
+          color="primary"
+          size="large"
+          type="submit"
+          fullWidth
+        >
+          Submit
+        </Button>
+        <Button
+          variant="contained"
+          color="secondary"
+          size="small"
+          onClick={clear}
+          fullWidth
+        >
+          Clear
+        </Button>
       </form>
     </Paper>
   );
