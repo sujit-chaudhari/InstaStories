@@ -4,8 +4,10 @@ import memories from "./images/memories.png";
 import Post from "./components/Posts/Post/Post";
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
+import useStyles from "/.styles";
 
 const App = () => {
+  const classes = useStyles();
   return (
     <Container maxwidth="lg">
       <AppBar position="static" color="inherit">
