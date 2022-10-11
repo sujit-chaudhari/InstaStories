@@ -30,7 +30,7 @@ const Form = () => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">Creating a Memory</Typography>
+        <Typography variant="h6">Create a Story</Typography>
         <TextField
           name="creator"
           variant="outlined"
