@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 const CONNECTION_URL =
-  "mongodb+srv://memoriesapp:8J1I1XQQzl4aq6cU@cluster0.6yryjfx.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb://memoriesapp:pOQveKn9I39RfQu5@ac-bokbyxj-shard-00-00.6yryjfx.mongodb.net:27017,ac-bokbyxj-shard-00-01.6yryjfx.mongodb.net:27017,ac-bokbyxj-shard-00-02.6yryjfx.mongodb.net:27017/?ssl=true&replicaSet=atlas-wjn308-shard-0&authSource=admin&retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
